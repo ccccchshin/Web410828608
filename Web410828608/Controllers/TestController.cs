@@ -23,7 +23,10 @@ namespace Web410828608.Controllers
         }
         public ActionResult HW3()
         {
+            ViewBag.Sandy = "321";
+            ViewData["Alice"]="123";
             return View();
         }
+
     }
 }
