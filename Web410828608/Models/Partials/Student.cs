@@ -20,7 +20,7 @@ namespace Web410828608.Models
         [Display(Name = "姓名")]
         [StringLength(5, MinimumLength = 2 ,ErrorMessage = "請輸入1~10個字")]
        
-        public string Name { get; set; }
+        public string Username { get; set; }
         [Required(ErrorMessage = "請填寫學號")]
         [Display(Name = "學號")]
         [StringLength(10, ErrorMessage = "請輸入1~10個字")]
@@ -32,6 +32,11 @@ namespace Web410828608.Models
         [EmailAddress]
 
         public string Email { get; set; }
+
+        [Required(ErrorMessage = "必填欄位")]
+        [Display(Name = "是否註冊")]
+
+        public bool IsActive { get; set; }
     }
 
 }
